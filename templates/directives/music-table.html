@@ -1,0 +1,74 @@
+<div ng-controller="AudioController">
+
+	<h2>{{title}}</h2>
+	
+	<div class="col-md-12">
+	<div class="table" margin-bottom="0px">
+		<table id="songs" cellspacing="20">
+			<tbody>
+				<tr>
+					<th>
+						<h2>{{album}}</h2>
+					</th>
+					<th>
+						<h2>{{track}}</h2>
+					</th>
+					<th>
+						<h2>{{play}}</h2>
+					</th>
+				</tr>
+				<tr>
+					<td><img class="album" src="img/album1.jpg" alt="Album Cover 1"></td>
+					<td><h5>I'm A Believer</h5></td>
+					<td>
+						<audio controls="controls" preload="metadata">
+							<source src="audio/ImABeliever.mp3" type="audio/mpeg" codecs="mp3"/>
+							Audio is not supported by your browser
+						</audio>
+					</td>
+				</tr>
+				<tr>
+					<td><img class="album" src="img/album2.jpg" alt="Album Cover 2"></td>
+					<td><h5>Last Train to Clarksville</h5></td>
+					<td>
+						<audio controls="controls" preload="metadata">
+							<source src="audio/Clarksville.mp3" type="audio/mpeg" codecs="mp3"/>
+							Audio is not supported by your browser
+						</audio>
+					</td>
+				</tr>
+				<tr>
+					<td><img class="album" src="img/album3.jpg" alt="Album Cover 3"></td>
+					<td><h5>I'm Not Your Stepping Stone</h5></td>
+					<td>
+						<audio controls="controls" preload="metadata">
+							<source src="audio/SteppingStone.mp3" type="audio/mpeg" codecs="mp3"/>
+							Audio is not supported by your browser
+						</audio>
+					</td>
+				</tr>
+				<tr>
+					<td><img class="album" src="img/album1.jpg" alt="Album Cover 1"></td>
+					<td><h5>Tail Toddle</h5></td>
+					<td>
+						<audio controls="controls" preload="metadata">
+							<source src="audio/tailtoddle_lo.mp3" type="audio/mpeg" codecs="mp3"/>
+							Audio is not supported by your browser
+						</audio>
+					</td>
+				</tr>
+				<tr>
+					<td><img class="album" src="img/album2.jpg" alt="Album Cover 2"></td>
+					<td><h5>Daydream Believer</h5></td>
+					<td>
+						<audio controls="controls" preload="metadata">
+							<source src="audio/DaydreamBeliever.mp3" type="audio/mpeg" codecs="mp3"/>
+							Audio is not supported by your browser
+						</audio>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	</div>
+</div>
