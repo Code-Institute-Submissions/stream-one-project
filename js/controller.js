@@ -34,22 +34,26 @@ angular.module('bandAppControllers', [])
 	})
 
 	.controller('iTunesController', function($scope, $http) {
-		$scope.searchiTunes = function(artist) {
-			$http.jsonp('https://itunes.apple.com/search', {
-				params: {
-					'callback': 'JSON_CALLBACK',
-					'term': artist,
-					limit: 10
-				}
-			}).then(onSearchComplete, onError);
-		};
 
-		var onSearchComplete = function(response) {
-			$scope.data = response.data;
-			$scope.songs = response.data.results;
-		};
+		$scope.searchiTunes = function(artist){
+        // use the jsonp callback function from the $http service this
+        // will get around any limitations for cross-domain scripting.
+        $http.jsonp('http://itunes.apple.com/search', {
+            params: {
+                'callback': 'JSON_CALLBACK',
+                'term': artist
+            }
+        }).then(onSearchComplete, onError);
+    };
 
-		var onError = function(reason) {
-			$scope.error = reason;
-		};
+    // Get the data out of the response when search succeeds.
+    var onSearchComplete = function(response){
+        
+        $scope.data = response.data;
+        $scope.songs = response.data.results;
+    };
+
+    var onError = function(reason){
+        $scope.error = reason;
+    };
 	});

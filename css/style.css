@@ -1,4 +1,4 @@
-/*Site*/
+/*--------Site--------*/
 body {
 	background-color: rgba(158, 158, 158, 0.65);
 	padding: 31px 0px;
@@ -54,7 +54,7 @@ p {
 	text-transform: uppercase;
 }
 
-/*Home Page*/
+/*--------Home Page--------*/
 .carousel {
 	padding-top: 20px;
 }
@@ -68,7 +68,7 @@ p {
 }
 
 #tickets {
-	background-color: rgba(223, 240, 216, 0.62);
+	background: linear-gradient(27deg, teal, rgba(0, 0, 0, 0), teal);
 	border-radius: 15px;
 	border-style: solid;
 	border-width: 4px;
@@ -93,6 +93,7 @@ label {
 }
 
 .social {
+  background: linear-gradient(27deg, teal, rgba(0, 0, 0, 0.82), teal);
   width: 100%;
   top: 50%;
   text-align: center;
@@ -151,9 +152,10 @@ label {
   color: white;
 }
 
-/*The Band Page*/
+/*--------The Band Page--------*/
 
 .row {
+	background: linear-gradient(27deg, rgb(0, 128, 128), rgba(0, 0, 0, 0.67), teal);
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -172,20 +174,7 @@ label {
 	width: 100%;
 }
 
-/*Book Us Page*/
-
-.corp {
-	border: solid;
-	float: left;
-	margin-bottom: 5px;
-	width: 100%;
-}
-
-.wedding {
-	border: solid;
-	float: right;
-	width: 100%;
-}
+/*--------Book Us Page--------*/
 
 .contact-form {
 	margin: 20px 60px 60px 60px;
@@ -226,7 +215,7 @@ label {
 	color: white;
 }
 
-/*The Music Page*/
+/*--------The Music Page--------*/
 #wrapper {
 	background-image: url(../img/headphones.jpg);
 	-webkit-background-size: cover;
@@ -235,6 +224,10 @@ label {
 	background-attachment: fixed;
 	background-size: cover !important;
 	position: relative;
+}
+
+#musicp {
+	color: white;
 }
 
 video {
