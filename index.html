@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-gb" ng-app='BandApp'>
 <head>
+	<!-- add in meta tags before the title tag -->
 	<meta charset="utf-8">
 	<meta name="viewpoint" content="width=device-width" initial-scale="1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Stream One Project</title>
+	<!-- link fonts, stylesheets and favicon -->
 	<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -13,6 +15,7 @@
 </head>
 <body>
 
+	<!-- site navigation -->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -33,17 +36,21 @@
 			</div>
 		</div>
 	</nav>
+	<!-- end of site navigation -->
 
 	<div ng-view>
 
 	</div>
 
+	<!-- site footer -->
 	<footer class="nav navbar-fixed-bottom navbar-inverse">
 		<div>
 			<h6>The Swingers 2016</h6>
 		</div>
 	</footer>
+	<!-- end of site footer -->
 
+	<!-- include all script tags needed -->
 <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
 <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>

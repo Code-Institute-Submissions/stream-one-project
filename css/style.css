@@ -1,91 +1,80 @@
 /*--------Site--------*/
 body {
-	background-color: rgba(158, 158, 158, 0.65);
 	padding: 31px 0px;
 }
 
-#page-bg {
-	background-image: url(../img/stripe.jpg);
+.paralax{
+	background-attachment: fixed;
+	background-image: url(../img/live-band3.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-attachment: fixed;
-	background-size: cover !important;
+	background-size: cover;
 	position: relative;
 }
 
-h1, h2, p {
+h1, h2, h3, h4, h5{
 	color: black;
 	font-family: 'Limelight', serif;
 	line-height: 2em;
 	text-align: center;
 }
 
-h1 {
-	font-size: 80px;
-	padding-top: 20px;
-}
-
-h2 {
-	font-size: xx-large;
-	padding-bottom: 30px;
-	padding-top: 30px;
-}
-
-h3 {
-	font-weight: bolder;
-	text-align: center;
-}
-
-h4 {
-	text-align: center;
-}
-
-h5, h6 {
-	color: white;
-	text-align: center;
-}
-
-p {
+p{
+	color: black;
 	font-weight: 600;
+	text-align: center;
 }
 
-.button {
+.white-text{
+	color: white;
+}
+
+button{
 	text-transform: uppercase;
 }
 
 /*--------Home Page--------*/
-.carousel {
-	padding-top: 20px;
+
+.main-heading{
+	font-size: 80px;
+	padding-bottom: 50px;
+	padding-top: 50px;
 }
 
-.carousel-caption {
-	padding-bottom: 200px;
+.music-link{
+	color: white;
 }
 
-#heading {
-	color: black;
+a:hover{
+	color: #b7ddff;
 }
 
-#tickets {
-	background: linear-gradient(27deg, teal, rgba(0, 0, 0, 0), teal);
+.btn-primary{
+	background-color: #362463;
+	border-color: #fff;
+	color: #fbf7f7;
+}
+
+.btn-primary:hover{
+	background-color: #8939e2;
+	border-color: #f1f4f7;
+	color: #fff;
+}
+
+.tickets {
+	background: linear-gradient(27deg, teal, rgba(138, 134, 134, 0.82), teal);
 	border-radius: 15px;
 	border-style: solid;
 	border-width: 4px;
 	padding-bottom: 10px;
 }
 
-.btn:hover {
-	transform: scale(1.25);
-	transition: 1s, ease-in-out;
-}
-
-.modal-content {
-	background-color: #f5f5f5;
-}
-
-.modal-header {
-	background-color: #009688;
+.modal-header, .modal-footer{
+	background: linear-gradient(-5deg, #310909, red, #310909);
+	border-bottom: 1px solid #f00;
+	color: white;
+	padding: 15px;
 }
 
 label {
@@ -94,11 +83,9 @@ label {
 
 .social {
   background: linear-gradient(27deg, teal, rgba(0, 0, 0, 0.82), teal);
-  width: 100%;
-  top: 50%;
-  text-align: center;
-  padding-top: 20px;
   padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
 }
 
 .social .link {
@@ -154,7 +141,7 @@ label {
 
 /*--------The Band Page--------*/
 
-.row {
+.bandmembers {
 	background: linear-gradient(27deg, rgb(0, 128, 128), rgba(0, 0, 0, 0.67), teal);
 	margin-left: auto;
 	margin-right: auto;
@@ -176,47 +163,74 @@ label {
 
 /*--------Book Us Page--------*/
 
-.contact-form {
-	margin: 20px 60px 60px 60px;
+.image{
+	opacity: 1;
+	display: block;
+	width: 100%;
+	transition: .5s ease;
+	backface-visibility: hidden;
 }
 
-.form-control {
-	opacity: 0.7;
+.middle{
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
 
-label {
-	color: black;
+.info:hover .image{
+	opacity: 0.3;
 }
 
-.submit-btn {
-	text-align: center;
+.info:hover .middle{
+	opacity: 1;
 }
 
-.btn-lg {
-	margin-bottom: 10px;
-	margin-top: 10px;
+.events{
+	border: solid;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 100%;
 }
 
-.btn-warning {
-	background-color: #337ab7;
-	border-color: #286090;
-	color: black;
-}
-
-.btn-warning:hover {
-	background-color: #1fec71;
-	border-color: rgb(9, 88, 66);
+.event-para{
+	background: linear-gradient(27deg, rgb(0, 128, 128), rgba(0, 0, 0, 0.67), teal);
+	border: solid;
+	border-radius: 15px;
 	color: white;
+	padding: 20px;
 }
 
-.btn-warning:active:focus {
-	background-color: #12d58d;
-	border-color: #0d3898;
+.form-group{
+	background: linear-gradient(27deg, rgb(0, 128, 128), rgba(0, 0, 0, 0.67), teal);
+	border: solid white;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+label{
+	color: white;
+	padding-top: 5px;
+}
+
+.btn-warning{
+	background-color: #2790a0;
+	border-color: #fff;
+	color: #060606;
+	margin-top: 20px;
+}
+
+.btn-warning:hover{
+	background-color: purple;
+	border-color: black;
 	color: white;
 }
 
 /*--------The Music Page--------*/
-#wrapper {
+.wrapper {
 	background-image: url(../img/headphones.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -224,10 +238,6 @@ label {
 	background-attachment: fixed;
 	background-size: cover !important;
 	position: relative;
-}
-
-#musicp {
-	color: white;
 }
 
 video {
