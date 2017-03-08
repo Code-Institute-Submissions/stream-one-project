@@ -1,5 +1,7 @@
 # Stream One Project
 
+This is my final project for Stream One of my Full Stack Web Development course through [Code Institute] (https://www.codeinstitute.net/).
+
 ## Guidelines
 
 1. Please use **AngularJS** as your framework
@@ -14,3 +16,9 @@
 	- Use the deployment document file from course
 7. Use semantic **HTML5** markup
 8. Make site as *responsive* as possible.
+
+
+## Resources
+
+I used [Unsplash] (https://unsplash.com/) for all website images (which are royalty free).
+I used the album cover images from the assets folder provided by Code Institute
