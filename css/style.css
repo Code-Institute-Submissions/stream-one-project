@@ -3,6 +3,18 @@ body {
 	padding: 31px 0px;
 }
 
+.navbar-fixed-top{
+	background: linear-gradient(1deg, rgb(0, 128, 128), black);
+}
+
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand{
+	color: white;
+}
+
+.navbar-fixed-bottom{
+	background: black;
+}
+
 .paralax{
 	background-attachment: fixed;
 	background-image: url(../img/live-band3.jpg);
@@ -14,14 +26,19 @@ body {
 }
 
 h1, h2, h3, h4, h5{
-	color: black;
+	color: white;
 	font-family: 'Limelight', serif;
 	line-height: 2em;
 	text-align: center;
 }
 
+h6{
+	color: teal;
+	text-align: center;
+}
+
 p{
-	color: black;
+	color: white;
 	font-weight: 600;
 	text-align: center;
 }
@@ -34,20 +51,28 @@ button{
 	text-transform: uppercase;
 }
 
+.back-settings{
+	background: linear-gradient(27deg, rgb(0, 128, 128), rgba(0, 0, 0, 0.67), teal);
+	border: solid;
+	border-radius: 15px;
+	color: white;
+	padding: 20px;
+}
+
 /*--------Home Page--------*/
 
 .main-heading{
 	font-size: 80px;
-	padding-bottom: 50px;
-	padding-top: 50px;
+	padding-bottom: 20px;
+	padding-top: 40px;
 }
 
-.music-link{
-	color: white;
+.pad{
+	padding-bottom: 65px;
 }
 
-a:hover{
-	color: #b7ddff;
+.music-button{
+	margin-top: 50px;
 }
 
 .btn-primary{
@@ -62,14 +87,6 @@ a:hover{
 	color: #fff;
 }
 
-.tickets {
-	background: linear-gradient(27deg, teal, rgba(138, 134, 134, 0.82), teal);
-	border-radius: 15px;
-	border-style: solid;
-	border-width: 4px;
-	padding-bottom: 10px;
-}
-
 .modal-header, .modal-footer{
 	background: linear-gradient(-5deg, #310909, red, #310909);
 	border-bottom: 1px solid #f00;
@@ -81,11 +98,34 @@ label {
 	padding-bottom: 5px;
 }
 
-.social {
+.contact {
   background: linear-gradient(27deg, teal, rgba(0, 0, 0, 0.82), teal);
   padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
+}
+
+.info{
+	margin-top: 50px;
+}
+
+.map{
+	margin-top: 15px;
+}
+
+.map-responsive{
+	border: solid;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 .social .link {
@@ -149,24 +189,12 @@ label {
 
 .bandone {
 	border: solid;
-	float: left;
 	margin-bottom: 20px;
-	margin-top: 20px;
 	width: 100%;
 }
-
-.bandtwo {
-	border: solid;
-	float: right;
-	width: 100%;
-}
-
-/*--------Book Us Page--------*/
 
 .image{
-	opacity: 1;
 	display: block;
-	width: 100%;
 	transition: .5s ease;
 	backface-visibility: hidden;
 }
@@ -189,26 +217,13 @@ label {
 	opacity: 1;
 }
 
+/*--------Book Us Page--------*/
+
 .events{
 	border: solid;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	width: 100%;
-}
-
-.event-para{
-	background: linear-gradient(27deg, rgb(0, 128, 128), rgba(0, 0, 0, 0.67), teal);
-	border: solid;
-	border-radius: 15px;
-	color: white;
-	padding: 20px;
-}
-
-.form-group{
-	background: linear-gradient(27deg, rgb(0, 128, 128), rgba(0, 0, 0, 0.67), teal);
-	border: solid white;
-	border-radius: 15px;
-	padding: 20px;
 }
 
 label{
@@ -260,7 +275,6 @@ table {
 	margin-right: auto;
 	opacity: 0.8;
 	padding-bottom: 10px;
-	width: 80%;
 }
 
 .table th {
@@ -274,7 +288,7 @@ td {
 }
 
 .album {
-	border: 3px solid #535658;
+	border: 3px solid white;
 	border-radius: 6px;
 	height: 150px;
 	width: 150px;
