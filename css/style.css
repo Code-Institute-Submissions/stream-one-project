@@ -88,13 +88,19 @@ button{
 }
 
 .modal-header, .modal-footer{
-	background: linear-gradient(-5deg, #310909, red, #310909);
-	border-bottom: 1px solid #f00;
+	background: linear-gradient(27deg, teal, rgba(0, 0, 0, 0.82), teal);
+	border-bottom: 1px solid black;
 	color: white;
 	padding: 15px;
 }
 
+form{
+	color: black;
+	text-align: center;
+}
+
 label {
+	color: black;
 	padding-bottom: 5px;
 }
 
@@ -187,19 +193,17 @@ label {
 	margin-right: auto;
 }
 
-.bandone {
+.bandimg {
 	border: solid;
 	margin-bottom: 20px;
 	width: 100%;
-}
-
-.image{
 	display: block;
 	transition: .5s ease;
 	backface-visibility: hidden;
 }
 
 .middle{
+	background-color: rgba(0, 80, 80, 0.6);
 	transition: .5s ease;
 	opacity: 0;
 	position: absolute;
@@ -220,15 +224,16 @@ label {
 /*--------Book Us Page--------*/
 
 .events{
-	border: solid;
+	border: solid white;
+	border-radius: 15px;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	width: 100%;
 }
 
-label{
+.cont-form {
 	color: white;
-	padding-top: 5px;
+	font-size: medium;
 }
 
 .btn-warning{
@@ -263,6 +268,14 @@ video {
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
+}
+
+.music-table{
+	background: linear-gradient(27deg, rgb(0, 128, 128), rgba(0, 0, 0, 0.67), teal);
+	border: solid;
+	border-radius: 15px;
+	color: white;
+	padding: 20px;
 }
 
 table {
@@ -303,4 +316,95 @@ td {
 form {
 	padding-bottom: 20px;
 	text-align: center;
+}
+
+/*--------Media Query--------*/
+
+@media only screen and (max-width: 40em) {
+
+
+/*--------Site--------*/
+
+.main-heading {
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+h1{
+	font-size: 1.5em;
+	padding-top: 5px;
+}
+
+h2{
+	font-size: large;
+}
+
+h5{
+	font-size: smaller;
+}
+
+h1, h2, h3, h4, h5{
+	color: white;
+	font-family: 'Limelight', serif;
+	line-height: 1em;
+	text-align: center;
+}
+
+.pad {
+    padding-bottom: 5px;
+}
+
+p{
+	color: white;
+	/*font-weight: 600;*/
+	text-align: center;
+}
+
+/*--------Home Page--------*/
+
+.back-settings{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+/*--------Music Page--------*/
+
+video {
+	background-color: slategray;
+	border: 5px solid black;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.music-table{
+	padding: 0px;
+}
+
+.table-responsive{
+	border: none;
+	padding: 0px;
+}
+
+td{
+	padding: 0px;
+}
+
+.album{
+	height: auto;
+	width: 60%;
+}
+
+audio{
+	max-width: 65px;
+}
+
+/*--------Band Page--------*/
+
+.middle, .text{
+	display: none;
+}
+
 }

@@ -1,10 +1,10 @@
 <div ng-controller="iTunesController">
         {{ error }}
-        <form name="search" ng-submit="searchiTunes(artist)">
+        <form name="search" ng-submit="searchItunes(artist)">
          <input type="search" required placeholder="Artist" ng-model="artist"/>
             <input type="submit" value="Search"/>
         </form>
-        <table ng-show="songs">
+        <table class="back-settings" ng-show="songs">
             <thead>
                 <tr>
                    <th>Album Artwork</th>

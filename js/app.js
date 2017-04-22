@@ -13,6 +13,10 @@ angular.module('BandApp').config(function($locationProvider, $routeProvider) {
 		templateUrl: 'templates/music.html',
 		controller: 'AudioController'
 	})
+	.when('/music', {
+		templateUrl: 'templates/music.html',
+		controller: 'iTunesController'
+	})
 	.when('/book-us', {
 		templateUrl: 'templates/book-us.html',
 		controller: 'BookingController'

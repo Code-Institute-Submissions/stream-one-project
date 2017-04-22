@@ -40,22 +40,22 @@
 			<form ng-controller="BookingController" role="form">
 				<h2>{{title}}</h2>
 				<div class="form-group contact-form back-settings">
-					<label>{{name}}</label>
+					<label class="cont-form">{{name}}</label>
 					<div>
 						<input ng-model="collectFormData.name" class="form-control" id="name" placeholder="Name & Surname" required>
 						<span ng-show="nameRequired" class="validation-span">{{nameRequired}}</span>
 					</div>
-					<label>{{email}}</label>
+					<label class="cont-form">{{email}}</label>
 					<div>
 						<input ng-model="collectFormData.email" class="form-control" id="email" placeholder="myemail@address.com" required>
 						<span ng-show="emailRequired" class="validation-span">{{emailRequired}}</span>
 					</div>
-					<label>{{message}}</label>
+					<label class="cont-form">{{message}}</label>
 					<div>
-						<textarea ng-model="collectFormData.message" class="form-control" id="message-text" form="userForm" rows="5" cols="50" placeholder="Message us for more information about bookings"></textarea>
+						<textarea ng-model="collectFormData.message" class="form-control" id="message-text" form="userForm" rows="5" cols="50" placeholder="Message us for more information about bookings."></textarea>
 					</div>
 					<div id="submit-btn">
-						<button ng-click="storeFormData()" type="reset" class="btn-lg btn-warning">Submit</button>
+						<button ng-click="storeFormData()" type="reset" class="btn-lg btn-warning">Send</button>
 					</div>
 				</div>
 			</form>
