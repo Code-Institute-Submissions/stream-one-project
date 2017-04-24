@@ -15,7 +15,7 @@ angular.module('BandApp').config(function($locationProvider, $routeProvider) {
 	})
 	.when('/music', {
 		templateUrl: 'templates/music.html',
-		controller: 'iTunesController'
+		controller: 'MediaCtrl'
 	})
 	.when('/book-us', {
 		templateUrl: 'templates/book-us.html',

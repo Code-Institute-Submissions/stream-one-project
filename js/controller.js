@@ -33,15 +33,15 @@ angular.module('bandAppControllers', [])
 		$scope.play = "Play";
 	})
 
-	.controller('iTunesController', function($scope, $http) {
+	/*.controller('iTunesController', function($scope, $http) {
 
 		$scope.searchiTunes = function(artist){
         // use the jsonp callback function from the $http service this
         // will get around any limitations for cross-domain scripting.
         $http.jsonp('http://itunes.apple.com/search', {
             params: {
-                'callback': 'JSON_CALLBACK',
-                'term': artist
+                callback: 'JSON_CALLBACK',
+                term: artist
             }
         }).then(onSearchComplete, onError);
     };
@@ -55,5 +55,16 @@ angular.module('bandAppControllers', [])
 
     var onError = function(reason){
         $scope.error = reason;
-    };
+    };*/
+    .controller('MediaCtrl', function($scope, Media){
+    	$scope.query = '';
+    	$scope.$watchCollection('query', function() {
+    		if ($scope.query.length > 0) {
+    			Media.search({ query: $scope.query}, function(data) {
+    				$scope.results = data.results;
+    			});
+    		} else {
+    			$scope.results = [];
+    		}
+    	});
 	});
