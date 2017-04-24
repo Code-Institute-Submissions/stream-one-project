@@ -1,35 +1,15 @@
-<!--<div ng-controller="iTunesController">
-        {{ error }}
-        <form name="search" ng-submit="searchItunes(artist)">
-         <input type="text" required placeholder="Artist" ng-model="artist"/>
-            <button class="btn-primary" value="Search"/>Search</button>
-        </form>
-        <table class="back-settings" ng-show="songs">
-            <thead>
-                <tr>
-                   <th>Album</th>
-                   <th>Track</th>
-                   <th>Preview</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="song in songs">
-                    <td><img ng-src="{{song.artworkUrl60}}" 
-                         alt="{{song.collectionName}}"/> 
-                    </td>
-                    <td>{{song.trackName}}</td>
-                    <td><a href="{{song.previewUrl}}">Play</a></td>
-                </tr>
-            </tbody>
-        </table>
-</div>-->
-<div ng-controller="MediaCtrl">
-<input type="search" ng-model="query" ng-keyup="onKeyupSearch()" placeholder="Search for movies, music, etc." style="width: 50%;"/>
-<ul ng-repeat="result in results">
-  <li style="list-style: none">
-    <h3>{{result.collectionName}}</h3>
-    <h4>{{result.artistName}}</h4>
-    <img ng-src="{{result.artworkUrl100}}"/>
-  </li>
-</ul>
+<div ng-controller="MediaController">
+
+    <div class="container">
+        <div class="back-settings">
+            <input type="search" ng-model="query" ng-keyup="onKeyupSearch()" placeholder="Search for movies, music, etc." style="width: 50%;"/>
+            <ul ng-repeat="result in results">
+                <li style="list-style: none">
+                    <h3>{{result.collectionName}}</h3>
+                    <h4>{{result.artistName}}</h4>
+                    <img ng-src="{{result.artworkUrl100}}"/>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>

@@ -8,14 +8,11 @@ angular.module('BandApp').config(function($locationProvider, $routeProvider) {
 	})
 	.when('/the-band', {
 		templateUrl: 'templates/the-band.html',
+		controller: 'MediaController'
 	})
 	.when('/music', {
 		templateUrl: 'templates/music.html',
 		controller: 'AudioController'
-	})
-	.when('/music', {
-		templateUrl: 'templates/music.html',
-		controller: 'MediaCtrl'
 	})
 	.when('/book-us', {
 		templateUrl: 'templates/book-us.html',
