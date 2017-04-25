@@ -1,4 +1,4 @@
-angular.module('BandApp', ['ngRoute', 'bandAppControllers', 'bandAppDirectives']);
+angular.module('BandApp', ['ngRoute', 'bandAppControllers', 'bandAppServices', 'bandAppDirectives']);
 
 angular.module('BandApp').config(function($locationProvider, $routeProvider) {
 
@@ -7,12 +7,15 @@ angular.module('BandApp').config(function($locationProvider, $routeProvider) {
 		controller: 'HomeController'
 	})
 	.when('/the-band', {
-		templateUrl: 'templates/the-band.html',
-		controller: 'MediaController'
+		templateUrl: 'templates/the-band.html'
 	})
 	.when('/music', {
 		templateUrl: 'templates/music.html',
 		controller: 'AudioController'
+	})
+	.when('/music', {
+		templateUrl: 'templates/music.html',
+		controller: 'MediaController'
 	})
 	.when('/book-us', {
 		templateUrl: 'templates/book-us.html',

@@ -5,8 +5,9 @@ angular.module('bandAppServices', ['ngResource'])
             method: 'JSONP',
             params: {
               limit: 10,
-              callback: 'JSON_CALLBACK'
             }
           }
         });
-      });
+      }).config(function ($sceProvider) {
+    $sceProvider.enabled(false);
+  });

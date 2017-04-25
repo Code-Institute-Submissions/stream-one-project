@@ -12,6 +12,7 @@ angular.module('bandAppDirectives', [])
 	.directive('searchItunes', function() {
 		return{
 			restrict: 'EA',  // EA -> Element/Attribute
+			scope: true,
 			templateUrl: 'templates/directives/search-itunes.html'
 		};
 	});

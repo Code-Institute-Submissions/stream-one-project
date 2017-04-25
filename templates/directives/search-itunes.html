@@ -1,13 +1,14 @@
+<!--Search iTunes HTML-->
 <div ng-controller="MediaController">
 
     <div class="container">
         <div class="back-settings">
-            <input type="search" ng-model="query" ng-keyup="onKeyupSearch()" placeholder="Search for movies, music, etc." style="width: 50%;"/>
+            <input class="itunessearch" type="search" ng-model="query" ng-keyup="onKeyupSearch()" placeholder="Search for music, movies, etc.." style="width: 50%;"/>
             <ul ng-repeat="result in results">
                 <li style="list-style: none">
                     <h3>{{result.collectionName}}</h3>
                     <h4>{{result.artistName}}</h4>
-                    <img ng-src="{{result.artworkUrl100}}"/>
+                    <img class="album" ng-src="{{result.artworkUrl100}}"/>
                 </li>
             </ul>
         </div>
