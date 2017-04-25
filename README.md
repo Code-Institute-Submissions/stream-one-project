@@ -22,3 +22,9 @@ This is my final project for Stream One of my Full Stack Web Development course 
 
 I used [Unsplash] (https://unsplash.com/) for all website images (which are royalty free).
 I used the album cover images from the assets folder provided by Code Institute
+
+## For Assessor
+
+I have made this project using the old guidelines.
+
+I would like my project to be assessed based on the deprecated marking criteria.
